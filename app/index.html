@@ -6,18 +6,670 @@
   <meta name="description" content="">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+
+<!--  <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,600&display=swap" rel="stylesheet">-->
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<!--  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>-->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 </head>
 <body>
+<div>
+  <div class="block1-wrapper">
+    <div class="block1-box">
+      <div class="container">
+        <div>
+          <header class="header">
+            <div class="header-row">
+              <div class="logo-wrapper">
+                <a href="#">
+                  <img src="img/main_logo.svg" alt="logo" class="logo-img">
+                </a>
+              </div>
+              <ul class="menu js-tab-menu">
+                <li class="menu-item">
+                  <a href="#about" class="menu-item-text text-small js-menu-item">О клинике</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#price" class="menu-item-text text-small js-menu-item">Стоимость</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#stock" class="menu-item-text text-small js-menu-item">Акции</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#reviews" class="menu-item-text text-small js-menu-item">Отзывы</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#answer" class="menu-item-text text-small js-menu-item">Задать вопрос</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#contacts" class="menu-item-text text-small js-menu-item">Контакты</a>
+                </li>
+              </ul>
+              <div class="phone-wrapper">
+                <div class="phone-img-wrapper">
+                  <img src="img/phone-call.png" alt="phone" class="phone-img">
+                </div>
+                <p class="phone-text">8 800 222 19 79</p>
+              </div>
+            </div>
+          </header>
+          <div class="block1-description-wrapper">
+            <div class="block1-description">
+              <h1 class="block1-title title-general">
+                В нашей стоматологии только <span class="other-text">передовое оборудование</span> и специалисты высокой квалификации
+              </h1>
+              <p class="text-middle block1-text">
+                Предоставляем гарантию на услуги
+              </p>
+              <div class="button-wrapper">
+                <button class="button-general-styles block1-button">
+                  Записаться на приём
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <div>Content</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="price" class="block-price-wrapper">
+    <div class="container">
+      <div class="block-price-content-wrapper">
+        <div class="block-price-description">
+          <h3 class="title-general title-general-align">
+            <span class="other-text">Рассчитайте </span>стоимость<br> услуги онлайн
+          </h3>
+          <p class="text-small block-price-description-text">
+            Выберите услугу, которая Вас интересует
+          </p>
+        </div>
+        <div class="block-price-cards-wrapper">
+          <div class="block-price-cards">
+            <div class="block-price-card-wrapper">
+              <div class="block-price-card">
+                <div class="block-price-card-img-wrapper">
+                  <img src="./img/img-for-price-1.png" alt="" class="block-price-card-img">
+                </div>
+                <p class="text-middle">
+                  Лечение зубов
+                </p>
+              </div>
+            </div>
+            <div class="block-price-card-wrapper">
+              <div class="block-price-card">
+                <div class="block-price-card-img-wrapper">
+                  <img src="./img/img-for-price-2.png" alt="" class="block-price-card-img">
+                </div>
+                <p class="text-middle">
+                  Удаление зубов
+                </p>
+              </div>
+            </div>
+            <div class="block-price-card-wrapper">
+              <div class="block-price-card">
+                <div class="block-price-card-img-wrapper">
+                  <img src="./img/img-for-price-3.png" alt="" class="block-price-card-img">
+                </div>
+                <p class="text-middle">
+                  Установка коронок
+                </p>
+              </div>
+            </div>
+            <div class="block-price-card-wrapper">
+              <div class="block-price-card">
+                <div class="block-price-card-img-wrapper">
+                  <img src="./img/img-for-price-4.png" alt="" class="block-price-card-img">
+                </div>
+                <p class="text-middle">
+                  Протезирование
+                </p>
+              </div>
+            </div>
+            <div class="block-price-card-wrapper">
+              <div class="block-price-card">
+                <div class="block-price-card-img-wrapper">
+                  <img src="./img/img-for-price-5.png" alt="" class="block-price-card-img">
+                </div>
+                <p class="text-middle">
+                  Имплантация
+                </p>
+              </div>
+            </div>
+            <div class="block-price-card-wrapper">
+              <div class="block-price-card">
+                <div class="block-price-card-img-wrapper">
+                  <img src="./img/img-for-price-6.png" alt="" class="block-price-card-img">
+                </div>
+                <p class="text-middle">
+                  Брекеты/Элайнеры
+                </p>
+              </div>
+            </div>
+            <div class="block-price-card-wrapper">
+              <div class="block-price-card">
+                <div class="block-price-card-img-wrapper">
+                  <img src="./img/img-for-price-7.png" alt="" class="block-price-card-img">
+                </div>
+                <p class="text-middle">
+                  Детская стоматология
+                </p>
+              </div>
+            </div>
+            <div class="block-price-card-wrapper">
+              <div class="block-price-card">
+                <div class="block-price-card-img-wrapper">
+                  <img src="./img/img-for-price-8.png" alt="" class="block-price-card-img">
+                </div>
+                <p class="text-middle">
+                  Гигиена
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+
+    <!-- Модальное содержание -->
+    <div class="modal-content container">
+      <div class="modal-row">
+        <div class="modal-column-left">
+          <h3 class="title-general"><span class="other-text">Бесплатная</span> диагностика у имплантолога</h3>
+          <p class="text-middle modal-text-write">Запишитесь прямо сейчас и получите:</p>
+          <ul class="modal-list text-middle">
+            <li>Подбор подходящего метода имплантации </li>
+            <li>План лечения от имплантолога со стажем 25 лет</li>
+            <li>Второе мнение, если вы уже были у врача</li>
+            <li>3 варианта стоимости имплантации</li>
+            <li>Европейский уровень сервиса</li>
+          </ul>
+          <div class="modal-input-button-wrapper">
+            <div class="modal-input-wrapper">
+              <input type="text" class="modal-input" placeholder="+7 (___) ___-__-__">
+            </div>
+            <div class="button-wrapper">
+              <button class="button-general-styles modal-button">
+                Записаться на приём
+              </button>
+            </div>
+            <p class="modal-text-accept">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных</p>
+          </div>
+
+
+        </div>
+        <div class="modal-column-right">
+          <div class="modal-column-right-row">
+            <div class="modal-card-client-wrapper modal-card">
+              <div class="modal-circle-and-text">
+                <div class="modal-circle"></div>
+                <div class="modal-text-block">Стаж 17 лет</div>
+              </div>
+              <p class="text-small modal-text-implant">1700+ имплантаций</p>
+              <p class="modal-text-client">Фамилия Имя <br>Отчество</p>
+            </div>
+            <div class="modal-card-client-wrapper modal-card">
+              <div class="modal-circle-and-text">
+                <div class="modal-circle"></div>
+                <div class="modal-text-block">Стаж 17 лет</div>
+              </div>
+              <p class="text-small modal-text-implant">1700+ имплантаций</p>
+              <p class="modal-text-client">Фамилия Имя<br> Отчество</p>
+            </div>
+            <div class="modal-card-client-wrapper modal-card">
+              <div class="modal-circle-and-text">
+                <div class="modal-circle"></div>
+                <div class="modal-text-block">Стаж 17 лет</div>
+              </div>
+              <p class="text-small modal-text-implant">1700+ имплантаций</p>
+              <p class="modal-text-client">Фамилия Имя<br> Отчество</p>
+            </div>
+          </div>
+          <div class="modal-column-right-row">
+            <div class="modal-card-general-wrapper modal-card">
+              <div class="modal-card-general">
+                <span class="modal-card-general-text">Первые по имплантации All-on-4 в России</span>
+              </div>
+            </div>
+            <div class="modal-card-general-wrapper modal-card">
+              <div class="modal-card-general">
+                <span class="modal-card-general-text">Лучшая стоматология России 2021</span>
+              </div>
+            </div>
+            <div class="modal-card-general-wrapper modal-card">
+              <div class="modal-card-general">
+                <span class="modal-card-general-text">Чемпионы России по протезированию</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+<!--      <span class="close">&times;</span>-->
+      <span class="close"></span>
+      <div></div>
+    </div>
+
+  </div>
+
+  <div id="stock" class="block-stock-wrapper">
+    <div class="container">
+      <div class="block-stock-content-wrapper">
+        <h3 class="title-general title-general-align">Акции</h3>
+        <div class="block-stock-cards-wrapper">
+          <div class="block-stock-cards">
+            <div class="block-stock-card-wrapper">
+              <div class="block-stock-card">
+                <div class="block-stock-card-content">
+                  <p class="text-large block-stock-card-title">
+                    Бесплатная консультация стоматолога-ортодонта
+                  </p>
+                  <p class="text-small block-stock-card-text">Бесплатно <span class="block-stock-card-text-price">1200 ₽</span></p>
+                  <div class="button-wrapper">
+                    <button class="button-general-styles block-stock-button">
+                      Зафиксировать цену
+                    </button>
+                  </div>
+                </div>
+                <div class="block-stock-card-img-wrapper">
+                  <img src="img/block-action-1.png" alt="" class="block-stock-card-img1"></div>
+                <span class="block-stock-card-text-date">до 31.09.21</span>
+              </div>
+            </div>
+            <div class="block-stock-card-wrapper">
+              <div class="block-stock-card">
+                <div class="block-stock-card-content">
+                  <p class="text-large block-stock-card-title">
+                    Имплантация зубов<br>под ключ
+                  </p>
+                  <p class="text-small block-stock-card-text">28 000 ₽ <span class="block-stock-card-text-price">36 000 ₽</span></p>
+                  <div class="button-wrapper">
+                    <button class="button-general-styles block-stock-button">
+                      Зафиксировать цену
+                    </button>
+                  </div>
+                </div>
+                <div class="block-stock-card-img-wrapper">
+                  <img src="img/block-action-2.png" alt="" class="block-stock-card-img2"></div>
+                <span class="block-stock-card-text-date">до 31.09.21</span>
+              </div>
+            </div>
+            <div class="block-stock-card-wrapper">
+              <div class="block-stock-card">
+                <div class="block-stock-card-content">
+                  <p class="text-large block-stock-card-title">
+                    Бесплатная консультация стоматолога-ортодонта
+                  </p>
+                  <p class="text-small block-stock-card-text">3 800 ₽ <span class="block-stock-card-text-price">5 600 ₽</span></p>
+                  <div class="button-wrapper">
+                    <button class="button-general-styles block-stock-button">
+                      Зафиксировать цену
+                    </button>
+                  </div>
+                </div>
+                <div class="block-stock-card-img-wrapper">
+                  <img src="img/block-action-3.png" alt="" class="block-stock-card-img3"></div>
+                <span class="block-stock-card-text-date">до 31.09.21</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="block-about-wrapper">
+    <div class="container">
+      <div class="block-about-row">
+        <div class="block-about-column-left">
+          <h1 class="title-general block-about-title">О клинике</h1>
+          <p class="text-small block-about-text">
+            Сегодня клиника «Анатомия» предлагает своим клиентам широкий спектр услуг в области косметологии и медицины. Мы рады способствовать улучшению состояния здоровья наших клиентов и делать их красивее изо дня в день. Профессионализм специалистов «Анатомии» позволяет нам получать благодарственные отзывы от довольных клиентов. Мы используем самое современное медицинское оборудование.</p>
+          <p class="text-small block-about-text">
+            Уютные кабинеты клиники, отзывчивый персонал, индивидуальный подход, качественная работа — все это ждет вас в стенах нашей клиники.
+            </p>
+          <p class="text-small block-about-text">
+            Медицинское оснащение, имеющееся в клинике, отвечает всем требованиям в области лечения и эксплуатации.Мы обеспечиваем нашим клиентам сервис мирового уровня и действительно гордимся этим.
+          </p>
+        </div>
+        <div class="block-about-column-right">
+          <div class="js-slider-for">
+            <img src="img/about1.jpg" alt="" class="block-about-large-item">
+            <img src="img/about2.jpg" alt="" class="block-about-large-item">
+            <img src="img/about3.jpg" alt="" class="block-about-large-item">
+            <img src="img/about4.jpg" alt="" class="block-about-large-item">
+          </div>
+
+          <div class="js-slider-nav block-about-img-bottom-row">
+            <img src="img/about1.jpg" alt="" class="block-about-small-item">
+            <img src="img/about2.jpg" alt="" class="block-about-small-item">
+            <img src="img/about3.jpg" alt="" class="block-about-small-item">
+            <img src="img/about4.jpg" alt="" class="block-about-small-item">
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="reviews" class="block-reviews-wrapper">
+    <div class="container">
+      <div class="block-reviews-box">
+        <h3 class="title-general title-general-align">Видео<span class="other-text"> отзывы</span></h3>
+        <div class="block-reviews-row js-slider-wrapper-video-review">
+          <div>
+            <div class="block-reviews-video-slide-wrapper">
+              <div class="block-reviews-video-slide-column-left">
+                <img src="img/photo-video.jpg" alt="">
+              </div>
+              <div class="block-reviews-video-slide-column-right">
+                <p class="text-small review-text-name">Савельева Анна, 43 года</p>
+                <div class="review-wrapper">
+                  <div class="review-box">
+                    <img src="img/lapky_end.png" alt="" class="lapky-img-start">
+                    <p class="review-text text-big">Высокий профессионализм врачей и качественный сервис</p>
+                    <img src="img/lapky_first.png" alt="" class="lapky-img-end">
+                  </div>
+                </div>
+                <div class="review-img-wrapper">
+                  <img src="img/before.jpg" alt="" class="reviews-img">
+                  <img src="img/after.jpg" alt="" class="reviews-img">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="block-reviews-video-slide-wrapper">
+              <div class="block-reviews-video-slide-column-left">
+                <img src="img/photo-video.jpg" alt="">
+              </div>
+              <div class="block-reviews-video-slide-column-right">
+                <p class="text-small review-text-name">Савельева Анна, 43 года</p>
+                <div class="review-wrapper">
+                  <div class="review-box">
+                    <img src="img/lapky_end.png" alt="" class="lapky-img-start">
+                    <p class="review-text text-big">Высокий профессионализм врачей и качественный сервис</p>
+                    <img src="img/lapky_first.png" alt="" class="lapky-img-end">
+                  </div>
+                </div>
+                <div class="review-img-wrapper">
+                  <img src="img/before.jpg" alt="" class="reviews-img">
+                  <img src="img/after.jpg" alt="" class="reviews-img">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="block-reviews-video-slide-wrapper">
+              <div class="block-reviews-video-slide-column-left">
+                <img src="img/photo-video.jpg" alt="">
+              </div>
+              <div class="block-reviews-video-slide-column-right">
+                <p class="text-small review-text-name">Савельева Анна, 43 года</p>
+                <div class="review-wrapper">
+                  <div class="review-box">
+                    <img src="img/lapky_end.png" alt="" class="lapky-img-start">
+                    <p class="review-text text-big">Высокий профессионализм врачей и качественный сервис</p>
+                    <img src="img/lapky_first.png" alt="" class="lapky-img-end">
+                  </div>
+                </div>
+                <div class="review-img-wrapper">
+                  <img src="img/before.jpg" alt="" class="reviews-img">
+                  <img src="img/after.jpg" alt="" class="reviews-img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="block-reviews-independent-wrapper">
+          <h3 class="title-general-align title-general"><span class="other-text">Отзывы</span> на независимых площадках</h3>
+        </div>
+        <div class="block-reviews-row js-slider-wrapper-video-review">
+          <div>
+            <div class="block-reviews-independent-row">
+              <div class="block-reviews-independent-column-left">
+                <p class="text-small ">Так нас оценивают пациенты в интернете</p>
+                <p class="text-rate">4,7/5</p>
+                <div class="stars-wrapper">
+                  <img src="img/Star.png" alt="" class="star-img">
+                  <img src="img/Star.png" alt="" class="star-img">
+                  <img src="img/Star.png" alt="" class="star-img">
+                  <img src="img/Star.png" alt="" class="star-img">
+                  <img src="img/Star.png" alt="" class="star-img">
+                </div>
+              </div>
+              <div class="block-reviews-independent-column-right">
+                <div class="review-text-info">
+                  <p class="text-small review-text-grey">Савельева Анна, 43 года</p>
+                  <p class="text-small review-text-grey">28.09.2021</p>
+                </div>
+                <p class="text-small review-text-description">Уютные кабинеты клиники, отзывчивый персонал, индивидуальный подход, качественная работа — все это ждет вас в стенах нашей клиники. Уютные кабинеты клиники, отзывчивый персонал, индивидуальный подход, качественная работа — все это ждет вас в стенах нашей клиники.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="block-reviews-independent-row">
+              <div class="block-reviews-independent-column-left">
+                <p class="text-small ">Так нас оценивают пациенты в интернете</p>
+                <p class="text-rate">4,7/5</p>
+                <div class="stars-wrapper">
+                  <img src="img/Star.png" alt="" class="star-img">
+                  <img src="img/Star.png" alt="" class="star-img">
+                  <img src="img/Star.png" alt="" class="star-img">
+                  <img src="img/Star.png" alt="" class="star-img">
+                  <img src="img/Star.png" alt="" class="star-img">
+                </div>
+              </div>
+              <div class="block-reviews-independent-column-right">
+                <div class="review-text-info">
+                  <p class="text-small review-text-grey">Савельева Анна, 43 года</p>
+                  <p class="text-small review-text-grey">28.09.2021</p>
+                </div>
+                <p class="text-small review-text-description">Уютные кабинеты клиники, отзывчивый персонал, индивидуальный подход, качественная работа — все это ждет вас в стенах нашей клиники. Уютные кабинеты клиники, отзывчивый персонал, индивидуальный подход, качественная работа — все это ждет вас в стенах нашей клиники.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="block-reviews-independent-row">
+              <div class="block-reviews-independent-column-left">
+                <p class="text-small ">Так нас оценивают пациенты в интернете</p>
+                <p class="text-rate">4,7/5</p>
+                <div class="stars-wrapper">
+                  <img src="img/Star.png" alt="" class="star-img">
+                  <img src="img/Star.png" alt="" class="star-img">
+                  <img src="img/Star.png" alt="" class="star-img">
+                  <img src="img/Star.png" alt="" class="star-img">
+                  <img src="img/Star.png" alt="" class="star-img">
+                </div>
+              </div>
+              <div class="block-reviews-independent-column-right">
+                <div class="review-text-info">
+                  <p class="text-small review-text-grey">Савельева Анна, 43 года</p>
+                  <p class="text-small review-text-grey">28.09.2021</p>
+                </div>
+                <p class="text-small review-text-description">Уютные кабинеты клиники, отзывчивый персонал, индивидуальный подход, качественная работа — все это ждет вас в стенах нашей клиники. Уютные кабинеты клиники, отзывчивый персонал, индивидуальный подход, качественная работа — все это ждет вас в стенах нашей клиники.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-reviews-last-row">
+          <img src="img/prodoctorov.jpg" alt="" class="img-prodoctorov">
+          <img src="img/zoon.jpg" alt="" class="img-zoon">
+          <img src="img/sberzdor.jpg" alt="" class="img-sberzdor">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="answer" class="block-answer-wrapper">
+    <div class="block-answer-box">
+      <div class="container">
+        <div class="block-answer-row">
+          <div class="block-answer-girl-background"></div>
+          <div class="block-answer-form-wrapper">
+            <p class="text-small block-answer-text">Не нашли нужную информацию?</p>
+            <h3 class="title-general block-answer-title">Задайте <span class="other-text">вопрос</span> доктору онлайн</h3>
+            <div class="block-answer-form">
+              <div class="block-answer-input-wrapper">
+                <input class="block-answer-input" type="text" placeholder="Как вас зовут?">
+              </div>
+              <div class="block-answer-input-wrapper">
+                <input class="block-answer-input" type="text" placeholder="Ваш телефон">
+              </div>
+              <div class="block-answer-input-wrapper">
+                <input class="block-answer-input" type="text" placeholder="Какой у вас вопрос?">
+              </div>
+              <div class="button-wrapper">
+                <button class="button-general-styles block-answer-button">
+                  Задать вопрос
+                </button>
+              </div>
+              <p class="block-answer-text-accept">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contacts" class="block-map-wrapper">
+    <div class="container">
+      <div class="block-map-box">
+        <h3 class="title-general title-general-align"><span class="other-text">Где</span> мы находимся?</h3>
+        <div class="block-map-cards-wrapper js-map-slider-wrapper">
+          <div class="block-map-card-wrapper">
+            <div class="block-map-card">
+              <div><img src="img/map1.jpg" alt="">
+              </div>
+              <p class="text-small block-map-text">Москва, ул. Спартаковская, д. 24, ст. 2, м. «Бауманская» (1 мин.)ТЦ Елоховский пассаж, 2 этаж</p>
+              <img src="img/map-metka.png" alt="" class="block-map-img-metka1">
+            </div>
+
+          </div>
+          <div class="block-map-card-wrapper">
+            <div class="block-map-card">
+              <img src="img/map2.jpg" alt="">
+              <p class="text-small block-map-text">Москва,  ул. Покрышкина, 1, стр. 1, м. «Юго-Западная» (2 мин.)</p>
+              <img src="img/map-metka.png" alt="" class="block-map-img-metka2">
+            </div>
+
+          </div>
+          <div class="block-map-card-wrapper">
+            <div class="block-map-card">
+              <img src="img/map3.jpg" alt="">
+              <p class="text-small block-map-text">Краснодар, ул. Московская, д. 61</p>
+              <img src="img/map-metka.png" alt="" class="block-map-img-metka3">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-inst-wrapper">
+    <div class="block-inst-container">
+      <h3 class="title-general-align title-general"><span class="other-text">Наш</span> инстаграм</h3>
+      <div class="block-inst-box">
+        <img src="img/inst1.jpg" alt="" class="block-inst-img">
+        <img src="img/inst2.jpg" alt="" class="block-inst-img">
+        <img src="img/inst3.jpg" alt="" class="block-inst-img">
+        <img src="img/inst4.jpg" alt="" class="block-inst-img">
+        <img src="img/inst5.jpg" alt="" class="block-inst-img">
+        <img src="img/inst6.jpg" alt="" class="block-inst-img">
+      </div>
+      <div class="button-wrapper">
+        <button class="button-general-styles block-inst-button">
+          <span class="button-inst-description">Посмотреть<img src="img/button-inst.png" alt="" class="block-inst-img-button">
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-wrapper">
+    <div class="container">
+      <div class="footer-box">
+        <div class="footer-header">
+          <div class="header-row">
+            <div class="logo-wrapper">
+              <a href="#">
+                <img src="img/main_logo.svg" alt="logo" class="logo-img">
+              </a>
+            </div>
+            <ul class="menu js-tab-menu">
+              <li class="menu-item">
+                <a href="#about" class="menu-item-text text-small active js-menu-item">О клинике</a>
+              </li>
+              <li class="menu-item">
+                <a href="#price" class="menu-item-text text-small js-menu-item">Стоимость</a>
+              </li>
+              <li class="menu-item">
+                <a href="#stock" class="menu-item-text text-small js-menu-item">Акции</a>
+              </li>
+              <li class="menu-item">
+                <a href="#reviews" class="menu-item-text text-small js-menu-item">Отзывы</a>
+              </li>
+              <li class="menu-item">
+                <a href="#answer" class="menu-item-text text-small js-menu-item">Задать вопрос</a>
+              </li>
+              <li class="menu-item">
+                <a href="#contacts" class="menu-item-text text-small">Контакты</a>
+              </li>
+            </ul>
+            <div class="phone-wrapper">
+              <div class="phone-img-wrapper">
+                <img src="img/phone-call.png" alt="phone" class="phone-img">
+              </div>
+              <p class="phone-text">8 800 222 19 79</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="footer-row">
+          <div class="footer-column">
+            <p class="footer-text">info@anatomia-clinic.ru ООО "ЦМР района Басманный" Юридический адрес: 105066, г.Москва, ул.Спартаковская, д.24 Анатомия® - зарегистрированный товарный знак</p>
+          </div>
+          <div class="footer-column">
+            <div class="footer-icons-wrapper">
+              <a href="#"><img src="img/inst.svg" alt="" class="footer-icon"></a>
+              <a href="#"><img src="img/vk.svg" alt="" class="footer-icon"></a>
+              <a href="#"><img src="img/youtube.svg" alt="" class="footer-icon"></a>
+              <a href="#"><img src="img/facebook.svg" alt="" class="footer-icon"></a>
+              <a href="#"><img src="img/telegr.svg" alt="" class="footer-icon"></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
 
   <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"
   ></script>
-  <script src="js/index.js"></script>
+
+<!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+<!--<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+<!--<script type="text/javascript" src="slick/slick.min.js"></script>-->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
