@@ -1,12 +1,12 @@
 $(document).ready(function () {
-
+/*slider in block about*/
     $('.js-slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
         asNavFor: '.js-slider-nav',
-        // adaptiveHeight: true,
+        adaptiveHeight: true,
     });
     $('.js-slider-nav').slick({
         slidesToShow: 3,
@@ -17,23 +17,18 @@ $(document).ready(function () {
         centerMode: false,
         focusOnSelect: true
     });
-
+/*slider for block-reviews*/
     $('.js-slider-wrapper-video-review').slick({
         dots: true,
         arrows: false,
     });
+    /*slider for maps*/
     $('.js-map-slider-wrapper').slick({
         slidesToShow: 3,
         dots: false,
         arrows: false,
         responsive: [
-            // {
-            //     breakpoint: 2000,
-            //     settings: {
-            //         "unslick",
-            //     }
-            //
-            // },
+
             {
                 breakpoint: 767,
                 settings: {
@@ -43,13 +38,29 @@ $(document).ready(function () {
                     arrows: false,
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
 
+    /*slider for first cards*/
+    $('.js-first-card-slider-wrapper').slick({
+        slidesToShow: 3,
+        dots: false,
+        arrows: false,
+        responsive: [
 
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false,
+                }
+            }
+        ]
+    });
+
+/*scrool to section*/
     $('.js-menu-item').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
@@ -57,76 +68,9 @@ $(document).ready(function () {
         }, 1000);
     });
 
-
-    // $(".js-popup").fancybox({
-  //   touch: false,
-  //
-  //   // Try to focus on the first focusable element after opening
-  //   autoFocus: true,
-  //   // Put focus back to active element after closing
-  //   backFocus: true,
-  //   // Do not let user to focus on element outside modal content
-  //   trapFocus: true
-  //
-  // });
-
-
-  //
-  //$('.js-clients-slider').slick({
-  //    autoplay: false,
-  //    autoplaySpeed: 3000,
-  //    slidesToShow: 5,
-  //        slidesToScroll: 1,
-  //        responsive: [
-  //        {
-  //            breakpoint: 1200,
-  //            settings: {
-  //                slidesToShow: 3,
-  //                slidesToScroll: 1
-  //            }
-  //        },
-  //        {
-  //            breakpoint: 991,
-  //            settings: {
-  //                slidesToShow: 2,
-  //                slidesToScroll: 1
-  //            }
-  //        },
-  //        {
-  //            breakpoint: 768,
-  //            settings: {
-  //                slidesToShow: 1,
-  //                slidesToScroll: 1
-  //            }
-  //        }
-  //    ],
-  //    arrows:true,
-  //    dots:true
-  //});
-
-
-  // $('.js-nav-btn').on('click', function (e) {
-  //   e.preventDefault();
-  //   $('.js-nav-content').slideToggle(300);
-  // });
-  // $('.js-dropdown-btn').on('click', function (e) {
-  //   e.preventDefault();
-  //   $(this).siblings('.js-dropdown-content').slideToggle(300);
-  // });
-  //
-  //
-  // if ($('.js-mask-phone').length > 0) {
-  //   $(".js-mask-phone").inputmask("8(999) 999-99-99");
-  // }
-
-
-  //if (window.outerWidth < 991){
-  //    $(".header__nav").appendTo(".header__top");
-  //}
-
-
 });
 
+/*modal-window*/
 // Получить модальный
 let modal = document.getElementById("myModal");
 
@@ -152,3 +96,35 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+// const btnBurger = document.querySelector('.burger-button-js');
+// const burgerMenuBox = document.querySelector('.burger-wrapper-js');
+// const burgerOverlay = document.querySelector('.burger-overlay-js');
+// const burgerClose = document.querySelector('.burger-close-button-js')
+// const burgerMenuLens = document.querySelector('.link-lens-js');
+// const burgerMenuMore = document.querySelector('.burger-menu-more-wrapper');
+// const burgerMenuMain = document.querySelector('.burger-menu-main-wrapper');
+// const burgerBack = document.querySelector('.button-back-js');
+// //show burger menu
+// btnBurger.addEventListener('click', () => {
+//     burgerMenuMore.classList.remove("burger-visible-block");
+//     burgerMenuMain.classList.remove("burger-hidden");
+//     burgerMenuBox.classList.add("burger-visible");
+// });
+// //close burger menu
+// burgerOverlay.addEventListener('click', () => {
+//     burgerMenuBox.classList.remove("burger-visible");
+// });
+// burgerClose.addEventListener('click', () => {
+//     burgerMenuBox.classList.remove("burger-visible");
+// });
+// //hide menu in burger
+// burgerMenuLens.addEventListener('click', () => {
+//     burgerMenuMore.classList.add("burger-visible-block");
+//     burgerMenuMain.classList.add("burger-hidden");
+// });
+// //button back in burger
+// burgerBack.addEventListener('click', () => {
+//     burgerMenuMore.classList.remove("burger-visible-block");
+//     burgerMenuMain.classList.remove("burger-hidden");
+// });
