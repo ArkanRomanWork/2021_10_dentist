@@ -18,8 +18,10 @@ body {
     width: 1170px;
     margin: 0 auto;
     @include max-screen(lg) {
-        //background: red;
         width: 738px;
+    }
+    @include max-screen(sm) {
+        width: 345px;
     }
 }
 
@@ -74,6 +76,10 @@ body {
         font-size: 32px;
         line-height: 40px;
     }
+    @include max-screen(sm) {
+        font-size: 24px;
+        line-height: 30px;
+    }
 }
 .other-text {
     color: #A18A6F;
@@ -101,13 +107,17 @@ body {
         width: 173px;
         height: 45px;
     }
+    @include max-screen(sm) {
+        width: 165px;
+        height: 43px;
+    }
 }
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include max-screen(lg) {
-        //display: none;
+    @include max-screen(sm) {
+        display: none;
     }
     &-item {
         color: #252525;
@@ -189,15 +199,8 @@ body {
     &-box {
         background: url('../img/Rectangle.png') right bottom no-repeat;
         @include max-screen(lg) {
-            //padding-top: 108px;
-            //background-position: top;
             background-size: 60%;
-
         }
-        //@media (max-width: 1000px) {
-        //    background-size: 80%;
-        //
-        //}
     }
     &-title {
         margin-bottom: 28px;
@@ -207,12 +210,18 @@ body {
         @media (max-width: 1220px) {
             max-width: 665px;
         }
+        @include max-screen(sm) {
+            max-width: 345px;
+        }
         br {
             @media (max-width: 1220px) {
                 display: none;
             }
             @include max-screen(lg) {
                 display: block;
+            }
+            @include max-screen(sm) {
+                display: none;
             }
         }
     }
@@ -256,6 +265,10 @@ body {
             //padding-top: 120px;
             background-size: 385px 400px;
             margin-right: 40px;
+
+        }
+        @include max-screen(sm) {
+            background: none;
 
         }
     }
@@ -700,6 +713,9 @@ body {
             margin-right: 14px;
             margin-top: 36px;
         }
+        @include max-screen(sm) {
+            display: none;
+        }
     }
 }
 .reviews-img {
@@ -1085,6 +1101,9 @@ body {
         @include max-screen(lg) {
             width: 738px;
         }
+        @include max-screen(sm) {
+            width: 345px;
+        }
         .button-wrapper {
             text-align: center;
         }
@@ -1140,9 +1159,15 @@ body {
             padding-top: 42px;
             padding-bottom: 42px;
         }
+        @include max-screen(sm) {
+            //display: none;
+        }
     }
     &-box {
         display: flex;
+        @include max-screen(sm) {
+            flex-direction: column;
+        }
         .logo {
             &-wrapper {
                 margin-bottom: 24px;
@@ -1174,6 +1199,10 @@ body {
                         line-height: 22px;
                         margin-top: 0;
                     }
+                    @include max-screen(sm) {
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
                 }
         }
         .menu {
@@ -1185,6 +1214,11 @@ body {
                 align-items: flex-start;
                 margin: 0 0 0 81px;
             }
+            @include max-screen(sm) {
+                display: flex;
+                margin-top: 32px;
+                margin-left: 0;
+            }
             &-item-text {
                 font-size: 14px;
                 line-height: 17px;
@@ -1194,6 +1228,9 @@ body {
                 @include max-screen(lg) {
                     margin: 0 0 9px 0;
                 }
+                @include max-screen(sm) {
+                    margin-bottom: 13px;
+                }
             }
         }
     }
@@ -1202,10 +1239,16 @@ body {
         @include max-screen(lg) {
             width: 33%;
         }
+        @include max-screen(sm) {
+            width: 100%;
+        }
     }
     &-middle-column {
         @include max-screen(lg) {
             width: 33%;
+        }
+        @include max-screen(sm) {
+            width: 100%;
         }
     }
     &-last-column {
@@ -1215,8 +1258,14 @@ body {
             margin-left: 20px;
             margin-top: 10px;
         }
+        @include max-screen(sm) {
+            width: 100%;
+        }
+        @include max-screen(sm) {
+            margin-top: 32px;
+            margin-left: 0;
+        }
     }
-
 
     &-text {
         font-size: 14px;
@@ -1225,6 +1274,18 @@ body {
         @include max-screen(lg) {
             font-size: 12px;
             line-height: 18px;
+        }
+        @include max-screen(sm) {
+            //padding-right: 15px;
+        }
+        br {
+            display: none;
+            @include max-screen(lg) {
+                display: none;
+            }
+            @include max-screen(sm) {
+                display: block;
+            }
         }
     }
     &-icons-wrapper {
@@ -1236,6 +1297,9 @@ body {
         @include max-screen(lg) {
             width: 188px;
             margin-top: 16px;
+        }
+        @include max-screen(sm) {
+            width: 204px;
         }
     }
     &-icon {
@@ -1271,6 +1335,9 @@ body {
         @include max-screen(lg) {
             padding: 42px 79px 42px 63px;
         }
+        @include max-screen(sm) {
+            padding: 60px 24px 82px;
+        }
     }
     &-text {
         &-write {
@@ -1278,6 +1345,12 @@ body {
             margin-bottom: 24px;
             font-weight: 600;
             color: #443329;
+            @include max-screen(sm) {
+                margin-top: 24px;
+                margin-bottom: 16px;
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
         &-accept {
             margin-top: 8px;
@@ -1287,6 +1360,7 @@ body {
             @include max-screen(lg) {
                 font-size: 12px;
                 line-height: 14px;
+                margin-top: 12px;
             }
         }
         &-block {
@@ -1339,10 +1413,17 @@ body {
             @include max-screen(lg) {
                 width: 60%;
             }
+            @include max-screen(sm) {
+                width: 100%;
+            }
             .title-general {
                 @include max-screen(lg) {
                     font-size: 36px;
                     line-height: 45px;
+                }
+                @include max-screen(sm) {
+                    font-size: 24px;
+                    line-height: 30px;
                 }
             }
         }
@@ -1353,6 +1434,10 @@ body {
                 width: 40%;
                 padding-left: 96px;
             }
+            @include max-screen(sm) {
+                display: none;
+            }
+
             &-row {
                 display: flex;
                 justify-content: space-between;
@@ -1362,12 +1447,18 @@ body {
                     flex-direction: column;
                     padding-left: 0;
                 }
+                @include max-screen(sm) {
+                    display: none;
+                }
                 &-for-tablet-hidden{
                     display: none;
                     @include max-screen(lg) {
                         display: flex;
                         flex-direction: row;
                         margin-top: 24px;
+                    }
+                    @include max-screen(sm) {
+                        display: none;
                     }
                 }
                 &-for-desktop-hidden{
@@ -1392,7 +1483,11 @@ body {
                 font-size: 16px;
                 line-height: 20px;
                 margin-bottom: 13px;
-        }
+            }
+            @include max-screen(sm) {
+                font-size: 14px;
+                line-height: 17px;
+            }
             &:before {
                 content: '';
                 position: absolute;
@@ -1408,6 +1503,9 @@ body {
     &-input-button-wrapper {
         width: 76%;
         margin-top: 25px;
+        @include max-screen(sm) {
+            width: 100%;
+        }
     }
     &-input {
         height: 52px;
@@ -1470,7 +1568,6 @@ body {
             &-wrapper-tablet {
                 @include max-screen(lg) {
                     width: 110px;
-
                 }
             }
         }
