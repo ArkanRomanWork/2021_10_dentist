@@ -17,7 +17,7 @@ $(document).ready(function () {
         centerMode: false,
         focusOnSelect: true
     });
-/*slider for block-reviews*/
+    /*slider for block-reviews*/
     $('.js-slider-wrapper-video-review').slick({
         dots: true,
         arrows: false,
@@ -41,8 +41,8 @@ $(document).ready(function () {
         ]
     });
 
-    /*slider for first cards*/
-    $('.js-first-card-slider-wrapper').slick({
+    /*slider for cards in block-stock*/
+    $('.js-stock-card-slider-wrapper').slick({
         slidesToShow: 3,
         dots: false,
         arrows: false,
@@ -60,45 +60,32 @@ $(document).ready(function () {
         ]
     });
 
-/*scrool to section*/
+/*scrool to section and hide burger after click on item*/
     $('.js-menu-item').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top
         }, 1000);
         $('.burger-wrapper-js').removeClass("burger-visible");
-
     });
-
 });
 
 /*modal-window*/
-// Получить модальный
 let modal = document.getElementById("myModal");
-
-// Получить кнопку, которая открывает модальный
 let btn = document.querySelector(".block1-button");
-
-// Получить элемент <span>, который закрывает модальный
 let span = document.getElementsByClassName("close")[0];
-
-// Когда пользователь нажимает на кнопку, откройте модальный
 btn.onclick = function() {
     modal.style.display = "block";
 }
-
-// Когда пользователь нажимает на <span> (x), закройте модальное окно
 span.onclick = function() {
     modal.style.display = "none";
 }
-
-// Когда пользователь щелкает в любом месте за пределами модального, закройте его
 window.onclick = function(event) {
     if (event.target === modal) {
         modal.style.display = "none";
     }
 }
-
+/*burger-menu*/
 const btnBurger = document.querySelector('.burger-button-js');
 const burgerMenuBox = document.querySelector('.burger-wrapper-js');
 const burgerOverlay = document.querySelector('.burger-overlay-js');
@@ -116,3 +103,4 @@ burgerOverlay.addEventListener('click', () => {
 burgerClose.addEventListener('click', () => {
     burgerMenuBox.classList.remove("burger-visible");
 });
+/*burger-menu-end*/

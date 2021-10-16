@@ -7,11 +7,6 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-
-    // example how to use mixin for responsive layout
-    @include max-screen(md) {
-        //background: red;
-    }
 }
 
 .container {
@@ -24,15 +19,11 @@ body {
         width: 345px;
     }
 }
-
 .text-small {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    @include max-screen(lg) {
-
-    }
     @include max-screen(sm) {
         font-size: 14px;
         line-height: 17px;
@@ -43,9 +34,6 @@ body {
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
-    @include max-screen(lg) {
-
-    }
     @include max-screen(sm) {
         font-size: 16px;
         line-height: 20px;
@@ -54,9 +42,6 @@ body {
 .text-large {
     font-size: 20px;
     line-height: 25px;
-    @include max-screen(lg) {
-
-    }
 }
 .text-big {
     font-family: 'Georgia';
@@ -101,12 +86,12 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
-    //padding: 17px 26px;
     &:hover {
         opacity: 0.9;
         transition: 0.3s;
     }
 }
+
 /*header-styles*/
 .logo-img {
     width: 200px;
@@ -157,7 +142,6 @@ body {
         }
     }
 }
-
 .phone {
     &-wrapper {
         display: flex;
@@ -196,6 +180,7 @@ body {
 }
 /*header-styles end*/
 
+/*block1*/
 .block1 {
     &-wrapper {
         background-color: #F5F5F5;
@@ -250,31 +235,26 @@ body {
         }
     }
     &-description {
-        //width: 60%;
         padding-top: 40px;
         @include max-screen(sm) {
             padding-top: 25px;
         }
         &-wrapper {
-            //width: 80%;
             padding-top: 173px;
             padding-bottom: 260px;
             @include max-screen(lg) {
                 width: 100%;
-                padding-top: 0px;
+                padding-top: 0;
                 padding-bottom: 290px;
             }
             @include max-screen(sm) {
                 padding-bottom: 380px;
             }
-
-
         }
     }
     &-content {
         display: flex;
         background: url('../img/block1_bc.png') right bottom no-repeat;
-        //background-size: 650px 675px;
         margin-right: -100px;
         @media (max-width: 1375px) {
             margin-right: -50px;
@@ -294,13 +274,6 @@ body {
             background-size: 350px 350px;
         }
     }
-    &-girl-background {
-        //width: 40%;
-        //z-index: 2000;
-        //background-image: url('../img/block1_bc1.png');
-        //background-repeat: no-repeat;
-        //background-position: bottom right;
-    }
     &-button {
         padding: 17px 26px;
         @include max-screen(lg) {
@@ -312,7 +285,6 @@ body {
         }
     }
 }
-
 /*block1 end*/
 
 /*block-price*/
@@ -427,7 +399,6 @@ body {
         flex-direction: column;
         background-color: #F5F5F5;
         min-height: 450px;
-
         @include max-screen(lg) {
             flex-direction: row;
             justify-content: space-between;
@@ -437,7 +408,6 @@ body {
             flex-direction: column;
             min-height: 450px;
         }
-
         &-wrapper {
             @include max-screen(lg) {
                 width: 100%;
@@ -455,7 +425,6 @@ body {
                 width: 100%;
                 padding: 32px 16px 0;
             }
-
         }
         &-title {
             font-style: normal;
@@ -475,7 +444,6 @@ body {
                 font-size: 16px;
                 line-height: 20px;
             }
-
             &-price {
                 display: inline-block;
                 margin-left: 8px;
@@ -486,7 +454,6 @@ body {
                 color: #8E8E8E;
                 text-decoration: line-through;
             }
-            
             &-date {
                 display: inline-block;
                 background-color: #A18A6F;
@@ -504,6 +471,7 @@ body {
             &-wrapper {
                 min-height: 250px;
                 display: flex;
+                justify-content: flex-end;
                 align-items: flex-end;
                 @include max-screen(lg) {
                     margin-right: 60px;
@@ -532,7 +500,6 @@ body {
             width: 137px;
             height: 200px;
         }
-        
     }
     &-button {
         width: 100%;
@@ -554,7 +521,6 @@ body {
                 padding: 0;
             }
         }
-
         &-wrapper {
             margin: 27px -15px 0;
             @include max-screen(lg) {
@@ -606,7 +572,6 @@ body {
         }
         @include max-screen(sm) {
             margin: 0 -7.5px;
-            //min-height: 250px;
         }
     }
     &-title {
@@ -620,10 +585,6 @@ body {
     &-text {
         color: #8E8E8E;
     }
-    }
-    &-card-item {
-        //width: 100%;
-        //max-width: 570px;
     }
     &-text {
         color: #8E8E8E;
@@ -661,16 +622,13 @@ body {
         @include max-screen(sm) {
             padding: 0 7.5px;
         }
-        .slick-track {}
     }
     &-large-item {
         padding: 0 5px;
         @include max-screen(lg) {
-            //margin-left: 0;
         }
         @include max-screen(sm) {
             padding: 0 7.5px;
-            //height: 250px;
         }
     }
 }
@@ -724,7 +682,6 @@ body {
                     padding-bottom: 35px;
                     }
                 }
-
             &-right {
                 width: 48.5%;
                 color: #8E8E8E;
@@ -773,7 +730,6 @@ body {
                 background-color: #A18A6F;
                 color: #ffffff;
                 @include max-screen(lg) {
-                    //width: 30%;
                     padding: 16px 12px 24px 12px;
                 }
                 @include max-screen(sm) {
@@ -799,7 +755,6 @@ body {
                 background-color: #F5F5F5;
                 padding: 32px 42px 56px 42px;
                 @include max-screen(lg) {
-                    //width: 70%;
                     padding: 16px;
                 }
                 @include max-screen(sm) {
@@ -1020,19 +975,15 @@ body {
     }
 
 }
-
 .slick-dots {
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 1rem 0;
-
     list-style-type: none;
-
     li {
         margin: 0 0.25rem;
     }
-
     button {
         display: block;
         width: 12px;
@@ -1047,21 +998,16 @@ body {
             height: 8px;
         }
     }
-
     li.slick-active button {
         background-color: #A18A6F;;
     }
-
 }
-
 /*block-reviews-box end*/
 
 /*block-answers*/
 .block-answer {
     &-wrapper {
         background-color: #F5F5F5;
-        //margin-top: 100px;
-        //margin-bottom: 110px;
     }
     &-box {
         background: url('../img/answer-circle.png') bottom left no-repeat;
@@ -1137,7 +1083,6 @@ body {
                 padding-bottom: 24px;
             }
             @include max-screen(sm) {
-                //padding-bottom: 29px;
             }
         }
     }
@@ -1218,12 +1163,10 @@ body {
     }
     &-card {
         position: relative;
-
         &-wrapper {
             padding: 0 15px;
             @include max-screen(lg) {
                 padding: 0 7.5px;
-
             }
         }
     }
@@ -1237,7 +1180,6 @@ body {
             line-height: 15px;
             min-height: 68px;
             padding: 12px 17px 11px 12px;
-            //margin-right: 0;
         }
         @include max-screen(sm) {
             font-size: 14px;
@@ -1245,7 +1187,6 @@ body {
             padding: 20px 88px 25px 16px;
             min-height: 99px;
         }
-
     }
     &-img-metka1 {
         position: absolute;
@@ -1274,7 +1215,6 @@ body {
             left: 108px;
         }
     }
-
 }
 /*block-map end*/
 
@@ -1333,7 +1273,6 @@ body {
             margin-left: 6px;
         }
     }
-
     &-button {
         display: inline-block;
         padding: 10px 38px 10px 32px;
@@ -1347,7 +1286,6 @@ body {
             padding-right: 0;
         }
     }
-
 }
 .button-inst-description {
     display: flex;
@@ -1358,9 +1296,9 @@ body {
     }
 }
 /*block-inst-end*/
+
 /*footer*/
 .footer {
-
     &-wrapper {
         background: #F5F5F5;
         padding-top: 60px;
@@ -1370,7 +1308,6 @@ body {
             padding-bottom: 42px;
         }
         @include max-screen(sm) {
-            //display: none;
         }
     }
     &-box {
@@ -1476,7 +1413,6 @@ body {
             margin-left: 0;
         }
     }
-
     &-text {
         font-size: 14px;
         line-height: 21px;
@@ -1486,7 +1422,6 @@ body {
             line-height: 18px;
         }
         @include max-screen(sm) {
-            //padding-right: 15px;
         }
         br {
             display: none;
@@ -1671,7 +1606,6 @@ body {
                     }
                 }
                 &-for-desktop-hidden{
-                    //display: block;
                     @include max-screen(lg) {
                         display: none;
                     }
@@ -1681,7 +1615,6 @@ body {
     }
     &-list {
         @include max-screen(lg) {
-            //width: 97%;
         }
         li {
             color: #443329;
@@ -1758,7 +1691,6 @@ body {
             background-color: #F5F5F5;
             @include max-screen(lg) {
                 min-height: 156px;
-
             }
 
             &-text {
@@ -1782,7 +1714,6 @@ body {
         }
     }
 }
-
 .close {
     color: #aaa;
     position: absolute;
@@ -1897,49 +1828,6 @@ body {
         &-bottom-content {
             margin-top: 132px;
         }
-
-        //&-more {
-        //    &-title {
-        //        font-weight: 600;
-        //        font-size: 24px;
-        //        line-height: 29px;
-        //        text-transform: uppercase;
-        //        color: #F87C3C;
-        //        padding-top: 47px;
-        //        padding-bottom: 19px;
-        //    }
-        //    &-wrapper {
-        //        display: none;
-        //        padding-top: 47px;
-        //        .button-back {
-        //            display: flex;
-        //
-        //            &-content {
-        //                display: block;
-        //                padding-left: 14px;
-        //                font-weight: 600;
-        //                font-size: 14px;
-        //                line-height: 17px;
-        //                text-transform: uppercase;
-        //                color: #D5642A;
-        //            }
-        //        }
-        //        .burger-menu-content {
-        //            a {
-        //                color: #FFFFFF;
-        //                padding-top: 28px;
-        //                padding-bottom: 28px;
-        //                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        //                &:visited {
-        //                    color: #FFFFFF;
-        //                }
-        //                &:last-child {
-        //                    border-bottom: none;
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
     }
     &-visible {
         z-index: 2000;
@@ -1975,7 +1863,6 @@ body {
         height: 43px;
     }
 }
-
 /*burger-menu-end*/
 
 
