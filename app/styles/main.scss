@@ -33,6 +33,10 @@ body {
     @include max-screen(lg) {
 
     }
+    @include max-screen(sm) {
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 .text-middle {
     font-style: normal;
@@ -41,6 +45,10 @@ body {
     line-height: 22px;
     @include max-screen(lg) {
 
+    }
+    @include max-screen(sm) {
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 .text-large {
@@ -201,6 +209,9 @@ body {
         @include max-screen(lg) {
             background-size: 60%;
         }
+        @include max-screen(sm) {
+            background-size: 100%;
+        }
     }
     &-title {
         margin-bottom: 28px;
@@ -212,6 +223,9 @@ body {
         }
         @include max-screen(sm) {
             max-width: 345px;
+            font-size: 23px;
+            line-height: 29px;
+            margin-bottom: 16px;
         }
         br {
             @media (max-width: 1220px) {
@@ -231,10 +245,16 @@ body {
         @include max-screen(lg) {
             margin-bottom: 32px;
         }
+        @include max-screen(sm) {
+            margin-bottom: 24px;
+        }
     }
     &-description {
         //width: 60%;
         padding-top: 40px;
+        @include max-screen(sm) {
+            padding-top: 25px;
+        }
         &-wrapper {
             //width: 80%;
             padding-top: 173px;
@@ -244,6 +264,10 @@ body {
                 padding-top: 0px;
                 padding-bottom: 290px;
             }
+            @include max-screen(sm) {
+                padding-bottom: 380px;
+            }
+
 
         }
     }
@@ -262,14 +286,12 @@ body {
             margin-right: 0;
         }
         @include max-screen(lg) {
-            //padding-top: 120px;
             background-size: 385px 400px;
             margin-right: 40px;
-
         }
         @include max-screen(sm) {
-            background: none;
-
+            margin-right: 0;
+            background-size: 350px 350px;
         }
     }
     &-girl-background {
@@ -284,6 +306,10 @@ body {
         @include max-screen(lg) {
             padding: 15px 35px;
         }
+        @include max-screen(sm) {
+            padding: 13px 0;
+            width: 100%;
+        }
     }
 }
 
@@ -297,6 +323,10 @@ body {
         @include max-screen(lg) {
             padding-top: 60px;
             padding-bottom: 36px;
+        }
+        @include max-screen(sm) {
+            padding-top: 42px;
+            padding-bottom: 26px;
         }
     }
     &-description {
@@ -326,8 +356,11 @@ body {
             @include max-screen(lg) {
                 width: 23.5%;
                 padding: 0 5px;
-                //padding: 0;
                 margin-bottom: 24px;
+            }
+            @include max-screen(sm) {
+                width: 48%;
+                margin-bottom: 16px;
             }
             &:hover {
                 transition: 0.2s;
@@ -384,6 +417,9 @@ body {
         @include max-screen(lg) {
             padding-bottom: 60px;
         }
+        @include max-screen(sm) {
+            padding-bottom: 42px;
+        }
     }
     &-card {
         position: relative;
@@ -396,6 +432,10 @@ body {
             flex-direction: row;
             justify-content: space-between;
             min-height: 268px;
+        }
+        @include max-screen(sm) {
+            flex-direction: column;
+            min-height: 450px;
         }
 
         &-wrapper {
@@ -410,6 +450,10 @@ body {
             flex-direction: column;
             @include max-screen(lg) {
                 width: 45%;
+            }
+            @include max-screen(sm) {
+                width: 100%;
+                padding: 32px 16px 0;
             }
 
         }
@@ -427,6 +471,10 @@ body {
             font-weight: bold;
             color: #A18A6F;
             margin-bottom: 24px;
+            @include max-screen(sm) {
+                font-size: 16px;
+                line-height: 20px;
+            }
 
             &-price {
                 display: inline-block;
@@ -460,12 +508,19 @@ body {
                 @include max-screen(lg) {
                     margin-right: 60px;
                 }
+                @include max-screen(sm) {
+                    justify-content: flex-end;
+                    margin-right: 0;
+                }
             }
         }
         &-img1 {
             margin-right: 12px;
             width: 219px;
             height: 234px;
+            @include max-screen(sm) {
+                margin-right: 6px;
+            }
         }
         &-img2 {
             margin-right: 0;
@@ -510,7 +565,6 @@ body {
 }
 /*block-stock end*/
 
-
 /*block-about*/
 .block-about {
     &-wrapper {
@@ -520,6 +574,9 @@ body {
         @include max-screen(lg) {
             padding-top: 42px;
             padding-bottom: 42px;
+        }
+        @include max-screen(sm) {
+            padding-top: 32px;
         }
     }
     &-row {
@@ -546,13 +603,19 @@ body {
         }
         @include max-screen(lg) {
             width: 100%;
-            //margin-left: 10px;
+        }
+        @include max-screen(sm) {
+            margin: 0 -7.5px;
+            //min-height: 250px;
         }
     }
     &-title {
         padding-bottom: 24px;
         @include max-screen(lg) {
             text-align: center;
+        }
+        @include max-screen(sm) {
+            padding-bottom: 16px;
         }
     &-text {
         color: #8E8E8E;
@@ -578,6 +641,10 @@ body {
                 width: 363px;
                 margin: 10px auto 0;
             }
+            @include max-screen(sm) {
+                width: auto;
+                margin-top: 15px;
+            }
             .slick-dots {
                 @include max-screen(lg) {
                     padding: 20px 0 0 0;
@@ -586,11 +653,13 @@ body {
         }
     }
     &-small-item {
-        //margin-left: 10px;
         padding: 0 5px;
         @include max-screen(lg) {
             width: 111px;
             height: 70px;
+        }
+        @include max-screen(sm) {
+            padding: 0 7.5px;
         }
         .slick-track {}
     }
@@ -598,6 +667,10 @@ body {
         padding: 0 5px;
         @include max-screen(lg) {
             //margin-left: 0;
+        }
+        @include max-screen(sm) {
+            padding: 0 7.5px;
+            //height: 250px;
         }
     }
 }
@@ -613,9 +686,16 @@ body {
             padding-top: 60px;
             padding-bottom: 71px;
         }
+        @include max-screen(sm) {
+            padding-top: 42px;
+            padding-bottom: 45px;
+        }
         .slick-dots {
             @include max-screen(lg) {
                 padding: 13px 0 0 0;
+            }
+            @include max-screen(sm) {
+                padding: 5px 0 0 0;
             }
         }
     }
@@ -629,15 +709,22 @@ body {
                 margin-top: 23px;
                 padding-bottom: 8px;
             }
+            @include max-screen(sm) {
+                flex-direction: column;
+            }
         }
         &-column {
             &-left {
                 width: 49%;
-                //margin-right: 10px;
                 @include max-screen(lg) {
                     width: 49%;
+                    }
+                @include max-screen(sm) {
+                    width: 100%;
+                    padding-bottom: 35px;
+                    }
                 }
-                }
+
             &-right {
                 width: 48.5%;
                 color: #8E8E8E;
@@ -646,9 +733,9 @@ body {
                     padding-left: 0;
                     width: 49%;
                 }
-                    //display: flex;
-                //flex-direction: column;
-                //align-items: center;
+                @include max-screen(sm) {
+                    width: 100%;
+                }
             }
         }
         &-wrapper {
@@ -661,6 +748,9 @@ body {
             @include max-screen(lg) {
                 margin-top: 60px;
             }
+            @include max-screen(sm) {
+                margin-top: 42px;
+            }
         }
         &-row {
             margin-top: 42px;
@@ -670,14 +760,15 @@ body {
             @include max-screen(lg) {
                 margin-top: 32px;
                 padding-bottom: 8px;
-
+            }
+            @include max-screen(sm) {
+                margin-top: 24px;
+                flex-direction: column;
             }
         }
         &-column {
-
             &-left {
                 width: 23%;
-                //margin-right: 20px;
                 padding: 32px 58px 32px 32px;
                 background-color: #A18A6F;
                 color: #ffffff;
@@ -685,10 +776,21 @@ body {
                     //width: 30%;
                     padding: 16px 12px 24px 12px;
                 }
+                @include max-screen(sm) {
+                    width: 100%;
+                    padding: 15px 0 16px 12px;
+                    display: flex;
+                    margin-bottom: 16px;
+                }
                 .text-small {
                     @include max-screen(lg) {
                         font-size: 13px;
                         line-height: 16px;
+                    }
+                    @include max-screen(sm) {
+                        font-size: 14px;
+                        line-height: 17px;
+                        width: 50%;
                     }
                 }
             }
@@ -699,6 +801,9 @@ body {
                 @include max-screen(lg) {
                     //width: 70%;
                     padding: 16px;
+                }
+                @include max-screen(sm) {
+                    width: 100%;
                 }
             }
         }
@@ -714,7 +819,13 @@ body {
             margin-top: 36px;
         }
         @include max-screen(sm) {
-            display: none;
+            margin: 34px 0 0;
+
+        }
+    }
+    &-block-rate {
+        @include max-screen(sm) {
+            width: 50%;
         }
     }
 }
@@ -743,6 +854,9 @@ body {
             padding-left: 46px;
             padding-right: 25px;
         }
+        @include max-screen(sm) {
+            padding-left: 41px;
+        }
         .lapky-img {
             &-start {
                 position: absolute;
@@ -754,6 +868,10 @@ body {
                     bottom: -5px;
                     right: 20px;
                 }
+                @include max-screen(sm) {
+                    bottom: -3px;
+                    right: 0;
+                }
             }
             &-end {
                 position: absolute;
@@ -764,6 +882,10 @@ body {
                     height: 19px;
                     top: -10px;
                     left: 16px;
+                }
+                @include max-screen(sm) {
+                    top: -10px;
+                    left: 0;
                 }
             }
         }
@@ -782,6 +904,9 @@ body {
             font-size: 14px;
             line-height: 17px;
             padding-left: 13px;
+        }
+        @include max-screen(sm) {
+            padding-left: 0;
         }
     }
     &-text {
@@ -817,6 +942,9 @@ body {
     @include max-screen(lg) {
         padding-right: 29px;
     }
+    @include max-screen(sm) {
+        padding-right: 65px;
+    }
 }
 .star-img {
     width: 24px;
@@ -824,6 +952,10 @@ body {
     @include max-screen(lg) {
         width: 16px;
         height: 16px;
+    }
+    @include max-screen(lg) {
+        width: 12px;
+        height: 12px;
     }
 }
 .text-rate {
@@ -843,6 +975,13 @@ body {
         font-size: 32px;
         line-height: 40px;
     }
+
+    @include max-screen(sm) {
+        font-size:20px;
+        line-height: 25px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 .img {
     &-prodoctorov {
@@ -852,6 +991,12 @@ body {
             width: 170px;
             height: 35px;
         }
+        @include max-screen(sm) {
+            width: 105px;
+            height: 21px;
+            margin-left: -5px;
+        }
+
     }
     &-zoon {
         width: 130px;
@@ -860,45 +1005,54 @@ body {
             width: 102px;
             height: 26px;
         }
+        @include max-screen(sm) {
+            width: 65px;
+            height: 17px;
+        }
     }
     &-sberzdor {
         width: 210px;
         height: 25px;
+        @include max-screen(sm) {
+            width: 115px;
+            height: 13px;
+        }
     }
+
 }
 
 .slick-dots {
-                    display: flex;
-                    justify-content: center;
-                    margin: 0;
-                    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
 
-                    list-style-type: none;
+    list-style-type: none;
 
-                    li {
-                        margin: 0 0.25rem;
-                    }
+    li {
+        margin: 0 0.25rem;
+    }
 
-                    button {
-                        display: block;
-                        width: 12px;
-                        height: 12px;
-                        padding: 0;
-                        border: none;
-                        border-radius: 100%;
-                        background-color: #D2C4B4;;
-                        text-indent: -9999px;
-                        @include max-screen(lg) {
-                            width: 8px;
-                            height: 8px;
-                        }
-                    }
+    button {
+        display: block;
+        width: 12px;
+        height: 12px;
+        padding: 0;
+        border: none;
+        border-radius: 100%;
+        background-color: #D2C4B4;;
+        text-indent: -9999px;
+        @include max-screen(lg) {
+            width: 8px;
+            height: 8px;
+        }
+    }
 
-                    li.slick-active button {
-                        background-color: #A18A6F;;
-                    }
+    li.slick-active button {
+        background-color: #A18A6F;;
+    }
 
-                }
+}
 
 /*block-reviews-box end*/
 
@@ -914,12 +1068,18 @@ body {
         @include max-screen(lg) {
             background-size: 375px 389px;
         }
+        @include max-screen(sm) {
+            background-size: 375px 355px;
+        }
     }
     &-row {
         display: flex;
         padding-top: 100px;
         @include max-screen(lg) {
             padding-top: 32px;
+        }
+        @include max-screen(sm) {
+            flex-direction: column-reverse;
         }
     }
     &-girl-background {
@@ -932,6 +1092,12 @@ body {
             background-size: 362px 457px;
             margin-top: -38px;
         }
+        @include max-screen(sm) {
+            width: 100%;
+            background-size: 285px 359px;
+            padding-top: 359px;
+            margin-top: -100px;
+        }
     }
     &-form  {
         &-wrapper {
@@ -942,9 +1108,15 @@ body {
                 width: 50%;
                 padding: 0 0 0 7px;
             }
+            @include max-screen(sm) {
+                width: 100%;
+            }
         }
         @include max-screen(lg) {
             width: 100%;
+        }
+        @include max-screen(sm) {
+            padding-bottom: 100px;
         }
     }
     &-text {
@@ -963,6 +1135,9 @@ body {
                 font-size: 12px;
                 line-height: 15px;
                 padding-bottom: 24px;
+            }
+            @include max-screen(sm) {
+                //padding-bottom: 29px;
             }
         }
     }
@@ -1019,6 +1194,10 @@ body {
             padding-top: 60px;
             padding-bottom: 60px;
         }
+        @include max-screen(sm) {
+            padding-top: 42px;
+            padding-bottom: 42px;
+        }
     }
     &-cards-wrapper {
 
@@ -1028,12 +1207,18 @@ body {
             padding-top: 32px;
             margin: 0 -7.5px;
         }
+        @include max-screen(sm) {
+            padding-top: 24px;
+        }
+        .slick-dots {
+            @include max-screen(sm) {
+                padding: 25px 0 0;
+            }
+        }
     }
     &-card {
         position: relative;
-        @include max-screen(lg) {
-            width: 235px;
-        }
+
         &-wrapper {
             padding: 0 15px;
             @include max-screen(lg) {
@@ -1053,6 +1238,12 @@ body {
             min-height: 68px;
             padding: 12px 17px 11px 12px;
             //margin-right: 0;
+        }
+        @include max-screen(sm) {
+            font-size: 14px;
+            line-height: 17px;
+            padding: 20px 88px 25px 16px;
+            min-height: 99px;
         }
 
     }
@@ -1094,6 +1285,9 @@ body {
         @include max-screen(lg) {
             padding-bottom: 60px;
         }
+        @include max-screen(sm) {
+            padding-bottom: 32px;
+        }
     }
     &-container {
         width: 782px;
@@ -1118,6 +1312,9 @@ body {
             margin-top: 34px;
             margin-bottom: 9px;
         }
+        @include max-screen(sm) {
+            margin-top: 24px;
+        }
     }
     &-img {
         width: 254px;
@@ -1127,6 +1324,10 @@ body {
             width: 236px;
             height: 236px;
             margin-bottom: 15px;
+        }
+        @include max-screen(lg) {
+            width: 105px;
+            height: 105px;
         }
         &-button {
             margin-left: 6px;
@@ -1140,6 +1341,11 @@ body {
             padding-top: 7px;
             padding-bottom: 7px;
         }
+        @include max-screen(sm) {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 
 }
@@ -1147,6 +1353,9 @@ body {
     display: flex;
     align-items: center;
     color: #ffffff;
+    @include max-screen(sm) {
+        justify-content: center;
+    }
 }
 /*block-inst-end*/
 /*footer*/
@@ -1747,7 +1956,7 @@ body {
     }
     &-img {
         width: 40px;
-        height: 24px;
+        height: 27px;
     }
     &-button-wrapper {
         display: none;
@@ -1759,6 +1968,7 @@ body {
     &-button {
         border: none;
         background-color: transparent;
+        padding: 0;
     }
     &-logo {
         width: 165px;
