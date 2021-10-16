@@ -97,34 +97,33 @@ window.onclick = function(event) {
     }
 }
 
-// const btnBurger = document.querySelector('.burger-button-js');
-// const burgerMenuBox = document.querySelector('.burger-wrapper-js');
-// const burgerOverlay = document.querySelector('.burger-overlay-js');
-// const burgerClose = document.querySelector('.burger-close-button-js')
-// const burgerMenuLens = document.querySelector('.link-lens-js');
-// const burgerMenuMore = document.querySelector('.burger-menu-more-wrapper');
-// const burgerMenuMain = document.querySelector('.burger-menu-main-wrapper');
-// const burgerBack = document.querySelector('.button-back-js');
-// //show burger menu
-// btnBurger.addEventListener('click', () => {
-//     burgerMenuMore.classList.remove("burger-visible-block");
-//     burgerMenuMain.classList.remove("burger-hidden");
-//     burgerMenuBox.classList.add("burger-visible");
-// });
-// //close burger menu
-// burgerOverlay.addEventListener('click', () => {
-//     burgerMenuBox.classList.remove("burger-visible");
-// });
-// burgerClose.addEventListener('click', () => {
-//     burgerMenuBox.classList.remove("burger-visible");
-// });
-// //hide menu in burger
-// burgerMenuLens.addEventListener('click', () => {
-//     burgerMenuMore.classList.add("burger-visible-block");
-//     burgerMenuMain.classList.add("burger-hidden");
-// });
-// //button back in burger
-// burgerBack.addEventListener('click', () => {
-//     burgerMenuMore.classList.remove("burger-visible-block");
-//     burgerMenuMain.classList.remove("burger-hidden");
-// });
+const btnBurger = document.querySelector('.burger-button-js');
+const burgerMenuBox = document.querySelector('.burger-wrapper-js');
+const burgerOverlay = document.querySelector('.burger-overlay-js');
+const burgerClose = document.querySelector('.burger-close-button-js')
+const burgerMenuLens = document.querySelector('.link-lens-js');
+const burgerMenuMore = document.querySelector('.burger-menu-more-wrapper');
+const burgerMenuMain = document.querySelector('.burger-menu-main-wrapper');
+const burgerBack = document.querySelector('.button-back-js');
+//show burger menu
+btnBurger.addEventListener('click', () => {
+    burgerMenuMain.classList.remove("burger-hidden");
+    burgerMenuBox.classList.add("burger-visible");
+});
+//close burger menu
+burgerOverlay.addEventListener('click', () => {
+    burgerMenuBox.classList.remove("burger-visible");
+});
+burgerClose.addEventListener('click', () => {
+    burgerMenuBox.classList.remove("burger-visible");
+});
+//hide menu in burger
+burgerMenuLens.addEventListener('click', () => {
+    burgerMenuMore.classList.add("burger-visible-block");
+    burgerMenuMain.classList.add("burger-hidden");
+});
+//button back in burger
+burgerBack.addEventListener('click', () => {
+    burgerMenuMore.classList.remove("burger-visible-block");
+    burgerMenuMain.classList.remove("burger-hidden");
+});
