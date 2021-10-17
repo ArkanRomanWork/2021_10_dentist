@@ -192,10 +192,10 @@ body {
     &-box {
         background: url('../img/Rectangle.png') right bottom no-repeat;
         @include max-screen(lg) {
-            background-size: 60%;
+            background-size: 500px 500px;
         }
         @include max-screen(sm) {
-            background-size: 100%;
+            background-size: 375px 350px;
         }
     }
     &-title {
@@ -653,14 +653,14 @@ body {
                 padding: 13px 0 0 0;
             }
             @include max-screen(sm) {
-                padding: 5px 0 0 0;
+                padding: 0 0 0 0;
             }
         }
     }
     &-video-slide {
         &-wrapper {
             margin-top: 42px;
-            padding-bottom: 16px;
+            padding-bottom: 32px;
             display: flex;
             justify-content: space-between;
             @include max-screen(lg) {
@@ -669,6 +669,7 @@ body {
             }
             @include max-screen(sm) {
                 flex-direction: column;
+                padding-bottom: 20px;
             }
         }
         &-column {
@@ -713,7 +714,7 @@ body {
             margin-top: 42px;
             display: flex;
             justify-content: space-between;
-            padding-bottom: 16px;
+            padding-bottom: 30px;
             @include max-screen(lg) {
                 margin-top: 32px;
                 padding-bottom: 8px;
@@ -721,6 +722,7 @@ body {
             @include max-screen(sm) {
                 margin-top: 24px;
                 flex-direction: column;
+                padding-bottom: 20px;
             }
         }
         &-column {
@@ -764,11 +766,12 @@ body {
         }
     }
     &-last-row {
-        margin-top: 30px;
+        margin-top: 48px;
         display: flex;
         justify-content: space-between;
         margin-left: 50px;
         margin-right: 50px;
+
         @include max-screen(lg) {
             margin-right: 14px;
             margin-top: 36px;
@@ -898,7 +901,8 @@ body {
         padding-right: 29px;
     }
     @include max-screen(sm) {
-        padding-right: 65px;
+        padding-right: 63px;
+        margin-top: 5px;
     }
 }
 .star-img {
@@ -936,6 +940,7 @@ body {
         line-height: 25px;
         padding-top: 0;
         padding-bottom: 0;
+        margin-top: -5px;
     }
 }
 .img {
@@ -956,9 +961,11 @@ body {
     &-zoon {
         width: 130px;
         height: 33px;
+        margin-left: -5px;
         @include max-screen(lg) {
             width: 102px;
             height: 26px;
+
         }
         @include max-screen(sm) {
             width: 65px;
@@ -966,8 +973,8 @@ body {
         }
     }
     &-sberzdor {
-        width: 210px;
-        height: 25px;
+        width: 270px;
+        height: 31px;
         @include max-screen(sm) {
             width: 115px;
             height: 13px;
@@ -979,10 +986,10 @@ body {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 1rem 0;
+    padding: 0 0;
     list-style-type: none;
     li {
-        margin: 0 0.25rem;
+        margin: 0 6px;
     }
     button {
         display: block;
@@ -1097,20 +1104,19 @@ body {
         border: none;
         height: 50px;
         border-radius: 5px;
+        padding: 20px;
         &::placeholder {
-            padding: 20px;
             font-size: 16px;
             height: 24px;
             color: #8E8E8E;
             @include max-screen(lg) {
                 font-size: 14px;
                 line-height: 21px;
-                padding: 12px;
             }
         }
         @include max-screen(lg) {
             height: 46px;
-
+            padding: 12px;
         }
         &-wrapper {
             margin-bottom: 12px;
@@ -1265,7 +1271,7 @@ body {
             height: 236px;
             margin-bottom: 15px;
         }
-        @include max-screen(lg) {
+        @include max-screen(sm) {
             width: 105px;
             height: 105px;
         }
@@ -1340,7 +1346,7 @@ body {
                     color: #A18A6F;
                     background: none;
                     -webkit-text-fill-color: #A18A6F;
-                    margin-top: 12px;
+                    margin-top: 24px;
                     @include max-screen(lg) {
                         font-size: 18px;
                         line-height: 22px;
@@ -1513,7 +1519,7 @@ body {
             padding: 7px 10px;
             position: absolute;
             bottom: -13px;
-            right: -46px;
+            right: 35px;
             font-size: 14px;
             line-height: 17px;
             text-align: center;
