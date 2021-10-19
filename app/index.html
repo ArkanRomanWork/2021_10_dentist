@@ -33,7 +33,7 @@
       </ul>
       <div class="burger-menu-bottom-content">
         <div class="phone-wrapper">
-          <p class="phone-text">8 800 222 19 79</p>
+          <a href="tel:+380999205785" class="phone-text">8 800 222 19 79</a>
         </div>
         <div class="footer-icons-wrapper">
           <a href="#"><img src="img/inst.svg" alt="" class="footer-icon"></a>
@@ -58,9 +58,7 @@
           <header class="header">
             <div class="header-row">
               <div class="logo-wrapper">
-                <a href="#">
                   <img src="img/main_logo.svg" alt="logo" class="logo-img">
-                </a>
               </div>
               <ul class="menu js-tab-menu">
                 <li class="menu-item">
@@ -86,7 +84,7 @@
                 <div class="phone-img-wrapper">
                   <img src="img/phone-call.png" alt="phone" class="phone-img">
                 </div>
-                <p class="phone-text">8 800 222 19 79</p>
+                <a href="tel:+380999205785" class="phone-text">8 800 222 19 79</a>
               </div>
               <div class="burger-button-wrapper">
                 <button class="burger-button burger-button-js">
@@ -235,14 +233,14 @@
           </ul>
           <div class="modal-input-button-wrapper">
             <div class="modal-input-wrapper">
-              <input type="text" class="modal-input" placeholder="+7 (___) ___-__-__">
+              <input type="tel" class="modal-input" placeholder="+7 (___) ___-__-__">
             </div>
             <div class="button-wrapper">
               <button class="button-general-styles modal-button">
                 Записаться на приём
               </button>
             </div>
-            <p class="modal-text-accept">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных</p>
+            <label class="modal-text-accept checkbox-label" for="input-checkbox"><input  id="input-checkbox" type="checkbox" class="checkbox">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных</label>
           </div>
           <div class="modal-column-right-row modal-column-right-row-for-tablet-hidden">
             <div class="modal-card-general-wrapper-tablet modal-card">
@@ -424,8 +422,9 @@
         <div class="block-reviews-row js-slider-wrapper-video-review">
           <div>
             <div class="block-reviews-video-slide-wrapper">
-              <div class="block-reviews-video-slide-column-left">
-                <img src="img/photo-video.jpg" alt="">
+              <div class="block-reviews-video-slide-column-left js-play">
+                <img src="img/photo-video.jpg" alt="" class="photo-video-img">
+                <img src="img/play.png" alt="" class="play-img">
               </div>
               <div class="block-reviews-video-slide-column-right">
                 <p class="text-small review-text-name">Савельева Анна, 43 года</p>
@@ -445,8 +444,9 @@
           </div>
           <div>
             <div class="block-reviews-video-slide-wrapper">
-              <div class="block-reviews-video-slide-column-left">
-                <img src="img/photo-video.jpg" alt="">
+              <div class="block-reviews-video-slide-column-left js-play">
+                <img src="img/photo-video.jpg" alt="" class="photo-video-img">
+                <img src="img/play.png" alt="" class="play-img">
               </div>
               <div class="block-reviews-video-slide-column-right">
                 <p class="text-small review-text-name">Савельева Анна, 43 года</p>
@@ -466,8 +466,9 @@
           </div>
           <div>
             <div class="block-reviews-video-slide-wrapper">
-              <div class="block-reviews-video-slide-column-left">
-                <img src="img/photo-video.jpg" alt="">
+              <div class="block-reviews-video-slide-column-left js-play">
+                <img src="img/photo-video.jpg" alt="" class="photo-video-img">
+                <img src="img/play.png" alt="" class="play-img">
               </div>
               <div class="block-reviews-video-slide-column-right">
                 <p class="text-small review-text-name">Савельева Анна, 43 года</p>
@@ -573,6 +574,21 @@
     </div>
   </div>
 
+  <div id="myModal1" class="modal modal-map">
+
+    <!-- Модальное содержание -->
+    <div class="modal-content-map container">
+      <div class="modal-content-map-iframe-wrapper">
+        <iframe class="modal-content-map-iframe" src="https://www.youtube.com/embed/khPh1z7e6ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <span class="close-map">
+<!--        <img src="img/close.png" alt="">-->
+      </span>
+      <div></div>
+    </div>
+
+  </div>
+
   <div id="answer" class="block-answer-wrapper">
     <div class="block-answer-box">
       <div class="container">
@@ -586,7 +602,7 @@
                 <input class="block-answer-input" type="text" placeholder="Как вас зовут?">
               </div>
               <div class="block-answer-input-wrapper">
-                <input class="block-answer-input" type="text" placeholder="Ваш телефон">
+                <input class="block-answer-input" id="phone" type="tel" placeholder="Ваш телефон">
               </div>
               <div class="block-answer-input-wrapper">
                 <input class="block-answer-input" type="text" placeholder="Какой у вас вопрос?">
@@ -596,7 +612,8 @@
                   Задать вопрос
                 </button>
               </div>
-              <p class="block-answer-text-accept">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+
+              <label class="block-answer-text-accept checkbox-label" for="input-checkbox1"><input type="checkbox" id="input-checkbox1" class="checkbox">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</label>
             </div>
           </div>
         </div>
@@ -611,24 +628,20 @@
         <div class="block-map-cards-wrapper js-map-slider-wrapper">
           <div class="block-map-card-wrapper">
             <div class="block-map-card">
-              <div><img src="img/map1.jpg" alt="">
-              </div>
+              <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A9c1d9402a9e75ab55b98419e796099a2436831538169a090fd5aebbe0a0ff91f&amp;source=constructor" frameborder="0"></iframe>
               <p class="text-small block-map-text">Москва, ул. Спартаковская, д. 24, ст. 2, м. «Бауманская» (1 мин.)ТЦ Елоховский пассаж, 2 этаж</p>
-              <div class="block-map-img-metka1"><a href="#"><img src="img/map-metka.png" alt=""></a></div>
             </div>
           </div>
           <div class="block-map-card-wrapper">
             <div class="block-map-card">
-              <img src="img/map2.jpg" alt="">
+              <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A85ceb2149755fc41f0be3a75c06ec897da00a59917f74a33b487f95ec48b58a7&amp;source=constructor" frameborder="0"></iframe>
               <p class="text-small block-map-text">Москва,  ул. Покрышкина, 1, стр. 1, м. «Юго-Западная» (2 мин.)</p>
-              <div class="block-map-img-metka2"><a href="#"><img src="img/map-metka.png" alt=""></a></div>
             </div>
           </div>
           <div class="block-map-card-wrapper">
             <div class="block-map-card">
-              <img src="img/map3.jpg" alt="">
+              <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A85ceb2149755fc41f0be3a75c06ec897da00a59917f74a33b487f95ec48b58a7&amp;source=constructor" frameborder="0"></iframe>
               <p class="text-small block-map-text">Краснодар, ул. Московская, д. 61</p>
-              <div class="block-map-img-metka3"><a href="#"><img src="img/map-metka.png" alt=""></a></div>
             </div>
 
           </div>
@@ -661,9 +674,7 @@
       <div class="footer-box">
         <div class="footer-first-column">
           <div class="logo-wrapper" >
-            <a href="#">
               <img src="img/main_logo.svg" alt="logo" class="logo-img">
-            </a>
           </div>
           <p class="footer-text">info@anatomia-clinic.ru </p>
           <p class="footer-text">ООО "ЦМР района Басманный"</p>
@@ -697,7 +708,7 @@
             <div class="phone-img-wrapper">
               <img src="img/phone-call.png" alt="phone" class="phone-img">
             </div>
-            <p class="phone-text">8 800 222 19 79</p>
+            <a href="tel:+380999205785" class="phone-text">8 800 222 19 79</a>
           </div>
           <div class="footer-icons-wrapper">
             <a href="#"><img src="img/inst.svg" alt="" class="footer-icon"></a>
@@ -720,7 +731,11 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"
 ></script>
+<script src="js/jquery.maskedinput.js" type="text/javascript"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/index.js"></script>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9c1d9402a9e75ab55b98419e796099a2436831538169a090fd5aebbe0a0ff91f&amp;lang=ru_RU&amp;scroll=true"></script>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A85ceb2149755fc41f0be3a75c06ec897da00a59917f74a33b487f95ec48b58a7&amp;lang=ru_RU&amp;scroll=true"></script>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A85ceb2149755fc41f0be3a75c06ec897da00a59917f74a33b487f95ec48b58a7&amp;lang=ru_RU&amp;scroll=true"></script>
 </body>
 </html>

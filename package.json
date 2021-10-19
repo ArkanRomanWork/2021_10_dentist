@@ -1,4 +1,4 @@
- {
+{
   "name": "optimizedhtml",
   "version": "1.0.0",
   "main": "index.js",
@@ -17,5 +17,8 @@
     "gulp-uglify": "^3.0.0",
     "sass": "^1.37.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "imask": "^6.2.2",
+    "inputmask": "^5.0.6"
+  }
 }

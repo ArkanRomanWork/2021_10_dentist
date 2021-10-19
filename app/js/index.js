@@ -6,7 +6,7 @@ $(document).ready(function () {
         arrows: false,
         fade: true,
         asNavFor: '.js-slider-nav',
-        adaptiveHeight: true,
+        // adaptiveHeight: true,
     });
     $('.js-slider-nav').slick({
         slidesToShow: 3,
@@ -68,21 +68,38 @@ $(document).ready(function () {
         }, 1000);
         $('.burger-wrapper-js').removeClass("burger-visible");
     });
+
+    jQuery(function($){
+        $("input[type='tel']").mask("+7(999) 999-99-99");
+    });
 });
 
 /*modal-window*/
 let modal = document.getElementById("myModal");
+let modalMap = document.getElementById("myModal1");
 let btn = document.querySelector(".block1-button");
+let imgClick = document.querySelectorAll(".js-play");
 let span = document.getElementsByClassName("close")[0];
+// let spanMap = document.getElementsByClassName("close-map")[0];
 btn.onclick = function() {
     modal.style.display = "block";
 }
+imgClick.forEach((item) => {
+    item.onclick = function() {
+        modalMap.style.display = "block";
+    }
+})
+
 span.onclick = function() {
     modal.style.display = "none";
 }
+// spanMap.onclick = function() {
+//     modalMap.style.display = "none";
+// }
 window.onclick = function(event) {
-    if (event.target === modal) {
+    if (event.target === modal || event.target === modalMap) {
         modal.style.display = "none";
+        modalMap.style.display = "none";
     }
 }
 /*burger-menu*/
