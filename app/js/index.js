@@ -76,18 +76,24 @@ $(document).ready(function () {
 
 /*modal-window*/
 let modal = document.getElementById("myModal");
-let modalMap = document.getElementById("myModal1");
+let modalMap = document.querySelectorAll('.js-modal-review');
 let btn = document.querySelector(".block1-button");
-let imgClick = document.querySelectorAll(".js-play");
+let playReview = document.querySelectorAll(".js-play");
 let span = document.getElementsByClassName("close")[0];
 // let spanMap = document.getElementsByClassName("close-map")[0];
 btn.onclick = function() {
     modal.style.display = "block";
 }
-imgClick.forEach((item) => {
-    item.onclick = function() {
-        modalMap.style.display = "block";
-    }
+
+playReview.forEach((item) => {
+    item.addEventListener('click', function () {
+            let currentItem = this.getAttribute('data-review');
+            modalMap.forEach((el) => {
+                if(el.getAttribute('data-review') === currentItem) {
+                    el.style.display = "block";
+                }
+        })
+    })
 })
 
 span.onclick = function() {
@@ -97,10 +103,15 @@ span.onclick = function() {
 //     modalMap.style.display = "none";
 // }
 window.onclick = function(event) {
-    if (event.target === modal || event.target === modalMap) {
+    if (event.target === modal) {
         modal.style.display = "none";
-        modalMap.style.display = "none";
     }
+    modalMap.forEach((el) => {
+        if(event.target === el) {
+            el.style.display = "none";
+
+        }
+    })
 }
 /*burger-menu*/
 const btnBurger = document.querySelector('.burger-button-js');
