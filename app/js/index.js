@@ -71,6 +71,9 @@ $(document).ready(function () {
 
     jQuery(function($){
         $("input[type='tel']").mask("+7(999) 999-99-99");
+        $("input[type='tel']").keypress(function(e) {
+                $(this).removeClass( "invalid" );
+        });
     });
 });
 
@@ -80,7 +83,6 @@ let modalMap = document.querySelectorAll('.js-modal-review');
 let btn = document.querySelector(".block1-button");
 let playReview = document.querySelectorAll(".js-play");
 let span = document.getElementsByClassName("close")[0];
-// let spanMap = document.getElementsByClassName("close-map")[0];
 btn.onclick = function() {
     modal.style.display = "block";
 }
@@ -99,9 +101,7 @@ playReview.forEach((item) => {
 span.onclick = function() {
     modal.style.display = "none";
 }
-// spanMap.onclick = function() {
-//     modalMap.style.display = "none";
-// }
+
 window.onclick = function(event) {
     if (event.target === modal) {
         modal.style.display = "none";
@@ -132,3 +132,31 @@ burgerClose.addEventListener('click', () => {
     burgerMenuBox.classList.remove("burger-visible");
 });
 /*burger-menu-end*/
+
+//vakid field
+const inputs = document.querySelectorAll('.js-input');
+const inputModal = document.querySelector('.js-input-modal');
+const btnsSend = document.querySelectorAll('.js-btn-send');
+const btnSendModal = document.querySelector('.js-btn-send-modal');
+
+btnsSend.forEach(function(button) {
+    button.addEventListener('click', () => {
+        inputs.forEach(function(el) {
+            if(!el.value) {
+                el.classList.add('invalid');
+            }
+        })
+    })
+});
+
+btnSendModal.addEventListener('click', () => {
+    if(!inputModal.value) {
+            inputModal.classList.add('invalid');
+        }
+});
+
+inputs.forEach(function(input) {
+    input.addEventListener('input', () => {
+        input.classList.remove('invalid');
+    })
+})
