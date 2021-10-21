@@ -608,6 +608,37 @@ body {
     &-img {
         &-bottom-row {
             margin-top: 10px;
+            position: relative;
+            &:before {
+                content: '';
+                height: 100px;
+                width: 5px;
+                background-color: #F5F5F5;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 100;
+                @include max-screen(sm) {
+                    height: 70px;
+                    width: 7.5px;
+                    left: -2px;
+                }
+            }
+            &:after {
+                content: '';
+                height: 100px;
+                width: 5px;
+                background-color: #F5F5F5;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 100;
+                @include max-screen(sm) {
+                    height: 70px;
+                    width: 7.5px;
+                    right: -2px;
+                }
+            }
             @include max-screen(lg) {
                 width: 363px;
                 margin: 10px auto 0;
